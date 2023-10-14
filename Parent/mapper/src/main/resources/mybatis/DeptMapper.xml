@@ -4,4 +4,7 @@
 
 <mapper namespace="com.zhoujian.mapper.DeptMapper">
 
+    <select id="findAll" resultType="com.zhoujian.pojo.Dept">
+        select id, name from dept;
+    </select>
 </mapper>
