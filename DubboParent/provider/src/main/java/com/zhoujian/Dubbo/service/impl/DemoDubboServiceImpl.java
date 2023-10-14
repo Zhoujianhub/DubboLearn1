@@ -7,7 +7,7 @@ import org.apache.dubbo.config.annotation.Service;
 public class DemoDubboServiceImpl implements DemoDubboService {
 
     @Override
-    public String Demo(String params) {
+    public String demo(String params) {
         System.out.println("执行demo ...");
         return params+"123";
     }
