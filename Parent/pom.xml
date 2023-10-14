@@ -12,6 +12,8 @@
         <module>pojo</module>
         <module>mapper</module>
         <module>api</module>
+        <module>provider</module>
+        <module>dept</module>
     </modules>
 
     <parent>
