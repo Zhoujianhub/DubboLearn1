@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import javax.jws.WebParam;
+
 @Controller
 public class DeptController {
     @Autowired
@@ -16,4 +18,11 @@ public class DeptController {
         model.addAttribute("list", deptService.findAll());
         return "dept";
     }
+
+    @GetMapping("/showEmp")
+    public String showEmp(Integer did, Model model) {
+        model.addAttribute("list", deptService.findEmpByDeptId(did));
+        return "showEmp";
+    }
+
 }

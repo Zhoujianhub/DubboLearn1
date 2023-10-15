@@ -5,6 +5,10 @@
 <mapper namespace="com.zhoujian.mapper.EmpMapper">
 
     <insert id="insertEmp" parameterType="com.zhoujian.pojo.Emp">
-        insert into emp(name, photo, did) values(#{name}, #{photo}, #{did});
+        insert into emp(name, photo, did) values(#{name}, #{photo}, #{did})
     </insert>
+
+    <select id="findEmpByDeptId" parameterType="int" resultType="com.zhoujian.pojo.Emp">
+        select id, name, photo from emp where did=#{did}
+    </select>
 </mapper>

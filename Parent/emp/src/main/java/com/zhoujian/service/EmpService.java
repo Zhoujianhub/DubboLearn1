@@ -10,4 +10,5 @@ public interface EmpService {
     public List<Dept> showAll();
 
     public int insert(Emp emp, MultipartFile file);
+
 }
