@@ -4,4 +4,7 @@
 
 <mapper namespace="com.zhoujian.mapper.EmpMapper">
 
+    <insert id="insertEmp" parameterType="com.zhoujian.pojo.Emp">
+        insert into emp(name, photo, did) values(#{name}, #{photo}, #{did});
+    </insert>
 </mapper>
